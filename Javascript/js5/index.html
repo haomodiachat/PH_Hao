@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        /*
+            $('p')
+            $('a#demo1')
+            $('a.class1')
+            $('div.abc a.href1')
+            $('div.abc > a.href1')
+        */
+        /*
+        gọi phương thức
+        $(document).ready();
+        $(document).on();
+        $(document).click();
+        * */
+        //callback function(){}
+        $(document).ready(function () {
+            
+        });
+        $(document).ready(function () {
+            $("button#an").click(funtion() {
+                $("p").hide();
+        });
+            $("button#hien").click(function(){
+                $("p").show();
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <button id="an">Click an</button>
+    <button id="hien">Click hien</button>
+    <p>the p</p>
+</body>
+</html>

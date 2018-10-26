@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+<script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+</script>
+
+    <link rel="stylesheet" href="Owl/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="Owl/dist/assets/owl.theme.default.min.css">
+    <script src="Owl/dist/owl.carousel.min.js"></script>
+    <style type="text/css">
+     .item {
+         background: greenyellow;
+     }
+    </style>
+</head>
+<body>
+    <div class="brand owl-carousel owl-theme">
+        <div class="item"><img src="a.jpg"></div>
+        <div class="item"><img src="b.jpg"></div>
+        <div class="item"><img src="g.jpg"></div>
+        <div class="item"><img src="h.jpg"></div>
+        <div class="item"><img src="hoasen.jpg"></div>
+        <div class="item"><img src="bavi.jpg"></div>
+        <div class="item"><img src="a.jpg"></div>
+        <div class="item"><img src="a.jpg"></div>
+        <div class="item"><img src="a.jpg"></div>
+        <div class="item"><img src="a.jpg"></div>
+        <div class="item"><img src="a.jpg"></div>
+        <div class="item"><img src="a.jpg"></div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".brand").owlCarousel({
+                loop:false,
+                margin:10,
+                nav:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600: {
+                        items: 3
+                    },
+                1000:{
+                    items:5
+                },
+                1200:{
+                    items:7
+                },
+                1500: {
+                        items:16
+                }
+                }});
+        });
+    </script>
+</body>
+</html>

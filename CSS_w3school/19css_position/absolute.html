@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        {
+            background: red;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+        }
+        #relative {
+            width: 400px;
+            height: 400px;
+            background: green;
+            position: relative;
+            margin: 100px 200px;
+        }
+        #relative #absolute-child {
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            background: red;
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!--<div id="absolute">
+
+    </div>-->
+    <div id="relative">
+        cha
+        <div id="absolute-child">
+            con
+        </div>
+    </div>
+</body>
+</html>
